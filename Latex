@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{listings, xcolor}
+
+%definition des couleurs utilisées
+\definecolor{violetp}{RGB}{229,207,255}
+
+%\usepackage[strict]{changepage}
+
+%pour une en tete (ne fonctionne pas encore)
+\usepackage{fancyhdr}
+\renewcommand\headrulewidth{1 pt}
+\pagestyle{fancy}
+\fancyhead[L]{\LaTeX \quad PPEI L3 MIAGE}
+\fancyhead[R]{Université Evry Val d'Essonne} 
+
+
+\usepackage[landscape, margin=0.2 cm]{geometry}
+
+\begin{document}
+	
+	
+    \title{\textbf{La reconnaissance facial}}
+    \author{Julie PRIGENT et Dorine HENRY}
+   	
+    \begin{center}
+    \setlength{\fboxrule}{1 pt}
+	\setlength{\fboxsep}{0.1 cm}
+    \fcolorbox{green}{violetp}{
+    La reconnaissance faciale est un moyen d'identifier ou de confirmer l'identité d'un 				individu grâce à son visage.}
+    \end{center}
+    
+    \begin{tabular}{cc}
+    
+    \fbox{ 
+    \begin{minipage}{0.5\textwidth} 
+    Chaque personne à 68 points spécifique qui existe sur tous les visages(le menton, chaque			côté des yeux, chaque coins des sourcils)\\
+	On utilise par la suite un algorithme de machine learning qui sera capable de trouver les 			68 points spécifiques sur le visage.
+	Et va ensuite se charger de "tourner" et mettre à l'échelle l’image pour que les yeux et la 	bouche soient centrés au mieux. Cette étape est importante pour faciliter la comparaison en 	analysant la géométrie du visage (entre la distance des yeux, la profondeur des orbites, la 	distance entre le front et le menton, la forme des pommettes et le contour des lèvres des 			oreilles et du menton). Le processus de capture du visage transforme les informations 				analogues (le visage) en un ensemble d'informations numériques (les données) selon les 			caractéristiques du visage de la personne. L'analyse de votre visage est transformée en 			formule mathématique. Le code numérique est appelé une empreinte faciale qui est unique. 			Toutes ces données sont comparées à une base de données avec d'autres visages connus. Si 			celle-ci correspond à une image de la base de données utilisée par la reconnaissance 				faciale, une correspondance est effectuée. \\
+    \end{minipage} }
+    
+    \fbox{ 
+    \begin{minipage}{0.5\textwidth}
+    Chaque personne à 68 points spécifique qui existe sur tous les visages(le menton, chaque			côté des yeux, chaque coins des sourcils)\\
+	On utilise par la suite un algorithme de machine learning qui sera capable de trouver les 			68 points spécifiques sur le visage.
+	\par
+	Et va ensuite se charger de "tourner" et mettre à l'échelle l’image pour que les yeux et la 	bouche soient centrés au mieux. Cette étape est importante pour faciliter la comparaison en 	analysant la géométrie du visage (entre la distance des yeux, la profondeur des orbites, la 	distance entre le front et le menton, la forme des pommettes et le contour des lèvres des 			oreilles et du menton). Le processus de capture du visage transforme les informations 				analogues (le visage) en un ensemble d'informations numériques (les données) selon les 			caractéristiques du visage de la personne. L'analyse de votre visage est transformée en 			formule mathématique. Le code numérique est appelé une empreinte faciale qui est unique. 			Toutes ces données sont comparées à une base de données avec d'autres visages connus. Si 			celle-ci correspond à une image de la base de données utilisée par la reconnaissance 				faciale, une correspondance est effectuée.
+    \end{minipage} }
+ 
+    \fbox{ 
+    \begin{minipage}{0.5\textwidth}
+    Chaque personne à 68 points spécifique qui existe sur tous les visages(le menton, chaque			côté des yeux, chaque coins des sourcils)\\
+	On utilise par la suite un algorithme de machine learning qui sera capable de trouver les 			68 points spécifiques sur le visage.
+	\par
+	Et va ensuite se charger de "tourner" et mettre à l'échelle l’image pour que les yeux et la 	bouche soient centrés au mieux. Cette étape est importante pour faciliter la comparaison en 	analysant la géométrie du visage (entre la distance des yeux, la profondeur des orbites, la 	distance entre le front et le menton, la forme des pommettes et le contour des lèvres des 			oreilles et du menton). Le processus de capture du visage transforme les informations 				analogues (le visage) en un ensemble d'informations numériques (les données) selon les 			caractéristiques du visage de la personne. L'analyse de votre visage est transformée en 			formule mathématique. Le code numérique est appelé une empreinte faciale qui est unique. 			Toutes ces données sont comparées à une base de données avec d'autres visages connus. Si 			celle-ci correspond à une image de la base de données utilisée par la reconnaissance 				faciale, une correspondance est effectuée.
+    \end{minipage} }
+    
+ 	\fbox{ 
+ 	\begin{minipage}{0.5\textwidth}
+    Chaque personne à 68 points spécifique qui existe sur tous les visages(le menton, chaque			côté des yeux, chaque coins des sourcils)\\
+	On utilise par la suite un algorithme de machine learning qui sera capable de trouver les 			68 points spécifiques sur le visage.
+   	\end{minipage} }
+    %\includegraphics[scale=0.5, width=5cm, height=5cm]{rf1.jpg}
+
+	\end{tabular}
+	\end{document}

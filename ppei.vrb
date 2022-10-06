@@ -1,0 +1,70 @@
+\centering
+    \begin{columns}
+
+%\parskip=10pt	
+    \begin{column}{0.5\textwidth}
+
+%introduction
+\parskip=3cm
+ 	\parbox[b]{110cm}{
+  	{\bf Introduction:}\\
+Pour déverrouiller son téléphone, retrouver une personne disparue ou encore déduire l’avis d’un client à partir de ses expressions faciales, la reconnaissance faciale rythme nos vies et fait l’objet de nombreuses recherches et investissements.\\ Quelles sont les particularités des algorithmes sur lesquels cette technologie est fondée ? }
+	\end{column}
+	
+	
+  % \parbox[t]{55cm}{
+
+\begingroup
+\setlength{\intextsep}{0pt}
+\begin{wrapfigure}[20]{r}{5.5cm}
+	\includegraphics[width=60cm]{Localise.jpg}
+	\caption{Detection du visage}
+\end{wrapfigure}
+%detection du visage
+	{\bf Detection du visage :}\\
+     Pour avoir recours à la reconnaissance faciale nous faisons appel à des algorithmes qui doivent tout d’abord déterminer la position d’un visage sur une image donnée. Lorsque l’on soumet une image à un de ces algorithmes, il la considère comme un ensemble de pixels, caractérisés par leur intensité. L’intensité d’un pixel varie selon la luminosité,  ainsi l’algorithme transforme cette donnée en “gradient”. Pour ce faire, chaque pixel est comparé par sa valeur à ses voisins, et est remplacé par une flèche qui indique la direction vers laquelle se trouvent d’autres pixels d’intensité similaire. A ce stade l’algorithme découpe l’image en zones, pour lesquelles il va calculer un “gradient fort”, qui correspond à la moyenne des gradients contenus dans la zone. On obtient alors un histogramme de gradient (HOG). \\
+L’algorithme utilise ensuite un HOG générique de visage humain, obtenu  à l’aide de machine learning. L’algorithme va chercher si le HOG générique se retrouve au sein de l’image qu’il analyse, et le cas échéant, il considérera qu’un visage humain se trouve à cet endroit.
+%\parskip=40pt
+\par\endgroup
+
+%reconnaissance faciale
+
+  % \parbox[t]{35cm}{
+\begingroup
+\setlength{\intextsep}{0pt}
+\begin{wrapfigure}[20]{r}{5.5cm}
+
+	\includegraphics[width=20cm]{Reco2D.jpg}
+	\caption{Reconnaissance 2D}
+\end{wrapfigure}	
+
+   {\bf Reconnaissance 2D:}\\
+Une fois le visage localisé par l’algorithme, l’analyse de celui-ci débute par le positionnement sur le visage de “points spécifiques”. Ces points sont au nombre de 68 et ont été déterminés afin qu’ils se retrouvent sur tous les visages humains.  Un algorithme de machine learning se charge de les identifier sur chaque visage qui lui est soumis. A partir de ces points, l’algorithme va recadrer le visage de sorte à ce qu’il se trouve dans une position standard et puisse être comparé à tous ceux que l’algorithme à déjà traité. En comparant ce visage à ceux d’une base de donnée, l’algorithme indiquera si une correspondance a été trouvée ou non.\par\endgroup
+
+\parskip=5cm
+
+\begingroup
+\setlength{\intextsep}{0pt}
+\begin{wrapfigure}[20]{r}{5.5cm}
+	\includegraphics[width=20cm]{Reco3D.jpg}
+	\caption{Reconnaissance 3D}
+\end{wrapfigure}	
+
+   {\bf Reconnaissance 3D:}\\
+La reconnaissance faciale par modélisation 3D est une technologie encore peu utilisée de par les moyens matériels qu’elle demande, on la retrouve dans les Iphone avec leur système de caméra True Depth. L’appareil projette 30 000 faisceaux infrarouge sur le visage de l’utilisateur, le temps que prend l’infrarouge avant d’être reflété sur le visage permet aux algorithmes de mettre en œuvre en temps réel une modélisation 3D du visage. Celle-ci est comparée à celle établie lors de la configuration du déverrouillage par la reconnaissance faciale.\par\endgroup
+
+	{\bf Conclusion:}\\
+   	La reconnaissance faciale fait appel à de l’intelligence artificielle. Pour que ces modèles soient performants, ils doivent être entraînés sur des bases de données contenant des milliers d’images de visages, parfois récupérées sur les réseaux sociaux sans que les utilisateurs en soient avertis. Ce qui pose des questions sur la sécurité des données personnelles.
+   	
+   	
+   	\end{column}
+   	
+\begin{column}{0.5\textwidth}
+	
+\end{column}
+
+\end{columns}
+
+
+
+\end{document}
